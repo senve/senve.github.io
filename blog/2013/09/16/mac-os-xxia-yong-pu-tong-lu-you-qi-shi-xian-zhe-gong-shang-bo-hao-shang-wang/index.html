@@ -1,0 +1,358 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mac OS X下用普通路由器实现浙工商拨号上网 | -SenVe</title>
+  <meta name="author" content="SenVe">
+  
+  <meta name="description" content="浙工商无线连接网络">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Mac OS X下用普通路由器实现浙工商拨号上网"/>
+  <meta property="og:site_name" content="-SenVe"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+  <style>
+img{max-width:100%;height:auto;}.alignleft{float:left;}.alignright{float:right;}body{padding-top:70px;background-color:#fff;}.widget ul .icon:before{content:'\f069';color:#4141e9;font:12px FontAwesome;}article footer{padding-top:10px;border-top:1px solid #333;}article a.more-link{padding-right:20px;padding-top:10px;padding-bottom:20px;color:#880088;text-decoration:none;}article header .icon{color:#258fb8;}article .post .icon:before{content:'\f15c';}article .comment .icon:before{content:'\f086';}article .photo .icon:before{content:'\f030';}article .link .icon:before{content:'\f0c1';}article .link .title a:after{content:'\f08e';color:#999;font:12px FontAwesome;padding-left:10px;vertical-align:super;}article .gallery{overflow:hidden;position:relative;}article .gallery:hover .control{opacity:1;-ms-filter:none;filter:none;}article .gallery img{position:absolute;top:0;left:0;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);}article .gallery .control{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-webkit-transition:0.3s;-moz-transition:0.3s;-o-transition:0.3s;-ms-transition:0.3s;transition:0.3s;}article .gallery .prev,article .gallery .next{position:absolute;top:0;width:50%;height:100%;cursor:pointer;}article .gallery .prev:before,article .gallery .next:before{position:absolute;font:24px/1 FontAwesome;text-align:center;width:24px;text-shadow:0 0 15px rgba(0,0,0,0.5);color:#fff;margin-top:-12px;top:50%;}article .gallery .prev{left:0;}article .gallery .prev:before{content:'\f053';left:10px;}article .gallery .next{right:0;}article .gallery .next:before{content:'\f054';right:10px;}article video,article img{min-width:0%;max-width:100%;height:auto;border:none;}.tagcloud .entry a{padding-left:5px;display:inline-block;}#sidebar ul li{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.post hr{border-top: 1px solid #080;}.tags a{margin-left: 2px}
+.categories .breadcrumb{padding: 5px 5px;margin-bottom: 0px;}
+.categories .breadcrumb>li+li:before{padding: 0px 2px;content:'/';}
+.testIE{display:none;}
+.carousel-control .fa{position: absolute;top: 50%;z-index: 5;display: inline-block;}
+  </style>
+  <!--[if IE]><style>.testIE.IE{display:inline;}</style><![endif]-->
+  <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" type="text/css"><![endif]-->
+  <!--[if (lt IE 9)&(gt IE 7)]><style>.testIE.IE8{display:inline;}</style><![endif]-->
+  <!--[if gt IE 8]><style>.testIE.IE9{display:inline;}</style><![endif]-->
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="atom.xml" title="-SenVe" type="application/atom+xml">
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.0.3/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/prettify/r298/prettify.min.css" type="text/css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" type="text/css">
+   <style>code{white-space: pre;word-wrap:break-word; overflow:hidden;}</style>
+<!--[if lt IE 9]>
+   <style>article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}</style>
+   <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+   <script src="/js/respond.min.js"></script>
+   <script src="http://cdn.bootcss.com/selectivizr/1.0.2/selectivizr-min.js"></script>
+<![endif]-->
+ </head>
+
+
+<body>
+  <header id="header" class="container"><nav id="main-nav" class="navbar navbar-default navbar-fixed-top " role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">-SenVe</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+	
+		    <li><a href="/" title="主页">主页</a></li>	    
+		    <li><a href="/about-me/" title="关于">关于</a></li>	    
+		    <li><a href="/archives/" title="归档">归档</a></li>	    
+		  <li class='dropdown'>
+		    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>其它链接<b class='caret'></b></a>
+		    <ul class='dropdown-menu'>
+		
+		      <li><a href="//instagram.com/senve" title="instagram">instagram</a></li>		
+		    </ul>
+		  </li>
+		
+      </ul>
+      <ul class="nav navbar-nav pull-right">
+      
+        <li><a href="atom.xml">RSS</a></li>
+            
+      
+        <li><a href="https://twitter.com/senve316">twitter</a></li>
+      
+      
+      
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="clearfix"></div></header>
+    <div id='content' class="container">
+       <div class="page-header-wrapper">
+       <!--[if lt IE 9]><div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>提示:</strong>您的浏览器版本太低了,建议升级到 <strong><a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" title="IE9">IE9</a></strong> 以上,本站使用<a href="https://www.google.com/intl/zh-CN/chrome/">Chrome浏览器</a>可以获得最好的显示效果.</div><![endif]-->
+       <div class="page-header"><h1>-SenVe <small></small></h1></div>
+       </div>
+       <div class="row">
+         <div id="main-col" class="alignleft col-sx-12 col-sm-8 col-md-9 col-lg-9">
+        <section id='header_widget'></section>
+	    <div id="wrapper">
+<article>
+<div id="post" class="post well">
+  <div class="post-content">
+    <header class="well-sm">
+      <i class="fa icon fa-5x pull-left"></i>
+      <h1 class="title">Mac OS X下用普通路由器实现浙工商拨号上网</h1>
+      
+        <span>发表于<time datetime="2013-09-16T03:02:00.000Z"> <a href="/blog/2013/09/16/mac-os-xxia-yong-pu-tong-lu-you-qi-shi-xian-zhe-gong-shang-bo-hao-shang-wang/">9月 16日 2013</a></time></span>      
+    </header>
+    
+    <section id='before_content_widget'></section>
+    <div class="entry">
+      
+        <h2 id="-">目的</h2>
+<p>解决苹果电脑使用 OS X 系统，并如 MacBook Air 和 retina MacBook Pro 等无网线接口的电脑上网问题。</p>
+<p>注意：该方法目前仅限于联通和移动两家服务商。</p>
+<h2 id="-l2tp-vpn-">绕过共享密钥验证，创建 L2TP 协议的 VPN 拨号</h2>
+<p>先要绕过 L2TP 协议的共享密钥验证，到<a href="http://d.pr/f/3CEw" target="_blank">这里</a>，下载该文件，然后将该名为 options 的文件移动到<code>/etc/ppp/</code>目录下（这里可以先复制该路径，然后打开 finder，左上角选前往，前往文件夹，粘贴，回车即可），然后创建 VPN。</p>
+<p>打开系统偏好设置，选择网络。</p>
+<center>
+<img src='http://ww4.sinaimg.cn/large/729fa75btw1e8o54j6774j217g12kwjq.jpg' width='700' />
+</center>
+<a id="more"></a>
+左下角“+”号创建新连接。
+
+如下图选择好相应选项之后，点击创建。
+
+<center>
+<img src='http://ww4.sinaimg.cn/large/729fa75btw1e8o58lbhtwj217g12kwjy.jpg' width='700' />
+</center>
+
+<p>然后，在该界面下。</p>
+<center>
+<img src='http://ww1.sinaimg.cn/large/729fa75btw1e8o5c6kuo3j217g12kaew.jpg' width='700' />
+</center>
+
+<p>服务器地址：</p>
+<p>联通：101.68.75.88</p>
+<p>移动：192.168.200.2</p>
+<p>帐号名称：即你宽带的帐号</p>
+<p>然后点击<strong>鉴定设置</strong>，只需填写第一项的密码，即宽带密码。</p>
+<p>完成，点击应用。</p>
+<p>再在同一界面，点击高级选项。</p>
+<center>
+<img src='http://ww3.sinaimg.cn/large/729fa75btw1e8o5ie6k6ij217g12kjvn.jpg' width='700' />
+</center>
+
+<p>勾选<strong>通过 VPN 链接发送所有流量</strong>，好之后，再次应用，至此拨号链接设置完成。</p>
+<h2 id="-">路由器设置</h2>
+<p>普通的非支持 L2TP 的路由器即可，先将网线连接墙壁和路由器的 wan 口，而后进路由器设置界面，在上网方式中选择 PPPoE 拨号，上网帐号填上自己的学号，口令默认身份证最后六位数。保存，如若整个过程没输错，那么路由器端也设置完成。</p>
+<h2 id="-">拨号成功</h2>
+<p>路由器发射的无线连接成功后，整个拨号设置也已完成，然后就在电脑端的 VPN(L2TP) 下，点击“连接”。</p>
+<p>出现如下图，就可正常上网了。</p>
+<center>
+<img src='http://ww1.sinaimg.cn/large/729fa75btw1e8o5mq2o3vj217g12k79i.jpg' width='700' />
+</center>
+      
+    </div>
+    <section id='after_content_widget'><div class="widget" id="widget_after_content_wumiiRelatedItems>">
+<script type="text/javascript" id="wumiiRelatedItems"></script>
+</div><div class="widget" id="widget_after_content_post_footer_info>">
+<div class="panel panel-success">
+    <div class="panel-heading" align="center">希望本站内容对您有点用处,有什么疑问或建议请在后面留言评论</div>
+    <div align="center" class="panel-body">若无特别注明，本站内容均属原创,转载请注明作者(<a href="">SenVe</a>)和出处 <a href="http://senve.me">-SenVe</a> ，请勿用于任何商业用途</div>
+    <div class="panel-body">本文链接: <a href="/blog/2013/09/16/mac-os-xxia-yong-pu-tong-lu-you-qi-shi-xian-zhe-gong-shang-bo-hao-shang-wang/">Mac OS X下用普通路由器实现浙工商拨号上网</a></div>
+</div></div><div class="widget" id="widget_after_content_ujian>">
+<div class="ujian-hook"></div>
+</div></section>
+    
+    
+        <footer id="post-meta">
+        <span class="time">最近更新:<time title="2014-01-18 00:08:29"datetime="2014-01-18 00:08:29"> 1月 18日 2014</time></span> | <span class="comment-link">
+<a href="http://senve.me/blog/2013/09/16/mac-os-xxia-yong-pu-tong-lu-you-qi-shi-xian-zhe-gong-shang-bo-hao-shang-wang/#comments" class="ds-thread-count comment-link" data-thread-key="mac-os-xxia-yong-pu-tong-lu-you-qi-shi-xian-zhe-gong-shang-bo-hao-shang-wang" data-count-type="comments">暂无评论</a></span>
+        </footer>
+    
+    <div class="clearfix"></div>
+  </div>
+</div>
+</article>
+
+
+    <section id='after_post_widget'><div class="widget" id="widget_after_post_post_pageNav>">
+<ul class="pager">
+  
+  <li class="previous"><a href="/blog/2013/10/27/1ri-tu-to-ru-no-namida/" title="1リットルの涙">&larr; 1リットルの涙</a></li>
+  
+  
+  <li class="next"><a href="/blog/2013/08/15/yong-alfredhe-popclipkuai-su-diao-yong-you-dao-cha-ci/" title="用Alfred和PopClip快速调用有道查词">用Alfred和PopClip快速调用有道查词 &rarr;</a></li>
+  
+</ul></div></section>    
+	<div id="comment"><a name="comments"></a>
+<!-- Duoshuo Comment BEGIN -->
+
+<div class="ds-thread"  data-thread-key="mac-os-xxia-yong-pu-tong-lu-you-qi-shi-xian-zhe-gong-shang-bo-hao-shang-wang"  data-url="http://senve.me/blog/2013/09/16/mac-os-xxia-yong-pu-tong-lu-you-qi-shi-xian-zhe-gong-shang-bo-hao-shang-wang/" data-title="Mac OS X下用普通路由器实现浙工商拨号上网"></div>
+<!-- Duoshuo Comment END -->
+
+
+</div>    
+</div><!--wapper-->
+         </div><!-- ID main-col END -->
+         <aside id="sidebar" class="alignright col-sx-6 col-sm-4 col-md-3 col-lg-3">
+<div id="widget_search" class="widget panel panel-primary">
+    <form action="//google.com/search" method="get" accept-charset="utf-8">
+  <div class="input-group">
+    <input class="form-control" id="searchbox" type="search" name="q" results="0" placeholder="search">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit">Go!</button>
+    </span>
+    <input type="hidden" name="q" value="site:senve.me">
+  </div>
+</form>
+</div>
+
+<div id="widget_recent_posts" class="widget panel panel-primary">
+  <div class="panel-heading">最近文章</div>  <div data-src='recent_posts' class='ajax_widgets'>正在加载...</div></div>
+
+<div id="widget_tagcloud" class="widget panel panel-primary">
+  <div class="panel-heading">标签云</div>  <div data-src='tagcloud' class='ajax_widgets'>正在加载...</div></div>
+
+<div id="widget_sina_weiboshow" class="widget panel panel-primary">
+  <div class="panel-heading">新浪微搏秀</div>  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=zh_cn&width=0&height=550&fansRow=1&ptype=1&speed=300&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1923065691&verifier=f383ae00&dpc=1"></iframe></div>
+
+</aside>
+         <div class="clearfix"></div>
+       </div><!-- row END -->
+    </div>
+    <footer id="footer" class="container">
+    <div class="panel panel-info">
+    <section id='footer_widget'></section>    <div class="panel-footer">
+  <div id="site-info">
+    <span class='author'>
+  
+  &copy; 2014 SenVe
+  
+    </span>
+  <span id='analytics-51la'></span><span id='analytics-google'></span><span id='analytics-cnzz'>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000250786'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s17.cnzz.com/stat.php%3Fid%3D1000250786%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</span>  </div>
+  <div id="copyright">Blog powered by <a href='http://zespia.tw/hexo/'><strong>hexo</strong></a> Theme <strong><a href='https://github.com/chenall/hexo-theme-chenall'>chenall</a></div>
+</div>
+<div class="clearfix"></div>
+
+
+    </div>
+    </footer>
+    
+        <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+        
+        <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        
+        
+        
+        <script src="http://cdn.bootcss.com/prettify/r298/prettify.min.js"></script>
+    <script type="text/javascript">
+   var lang=[];
+   var pretty_base='';
+   $('script').each(function(){
+	var c = $(this).attr('src');
+	if (!c)
+	    return;
+	if (c.match(/(\/)?prettify(\.min)?\.js/i))
+	{
+	    var index = c.lastIndexOf('/');
+	    if (index != -1)
+		pretty_base = c.substr(0,index + 1);
+	    return false;
+	}
+   })
+   $('pre code').each(function(){
+	var c = $(this).attr('class')
+	if (!c)
+	    return;
+	c = c.match(/\s?(lang\-\w+)/i);
+	if (c && lang.indexOf(c[1]) == -1)
+	{
+	    lang.push(c[1]);
+	    $.getScript(pretty_base + c[1] + '.min.js');
+	}
+   })
+
+    $(window).load(function(){
+       $("pre").addClass("prettyprint");
+       prettyPrint();
+    })
+</script>    
+        <script src="/js/jquery.imagesloaded.min.js"></script>
+        
+        
+    <script type="text/javascript">
+var duoshuoQuery = {short_name:"senve"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+    
+        
+    <!--wumii_relatedItems-->
+
+<script type="text/javascript">
+    var wumiiPermaLink = "http://senve.me/blog/2013/09/16/mac-os-xxia-yong-pu-tong-lu-you-qi-shi-xian-zhe-gong-shang-bo-hao-shang-wang/";
+    var wumiiTitle = "Mac OS X下用普通路由器实现浙工商拨号上网";
+    var wumiiTags = "";
+    var wumiiCategories = [];
+    var wumiiSitePrefix = "http://senve.me";
+    var wumiiParams = "&num=5&mode=3&pf=JAVASCRIPT";
+</script>
+<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
+<a href="http://www.wumii.com/widget/relatedItems" style="border:0;">
+<img src="http://static.wumii.cn/images/pixel.png" alt="无觅关联推荐，快速提升流量" style="border:0;padding:0;margin:0;" />
+</a>
+    
+        
+    
+<script type="text/javascript">var ujian_config = {num:6,showType:0,picSize:84,textHeight:45};</script>
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=1880458"></script>
+<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+    
+        <script src="http://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="/js/gallery.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>    
+        <script src="http://cdn.bootcss.com/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>    
+<script type="text/javascript">
+$('.ajax_widgets').each(function(){var src=$(this).attr('data-src');if(src)$(this).load('/widgets/'+src+'.html');})
+</script>
+
+
+</body>
+</html>
